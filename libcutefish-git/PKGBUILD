@@ -5,11 +5,9 @@ pkgrel=1
 pkgdesc="System library for Cutefish applications"
 arch=('x86_64')
 url="https://github.com/cutefishos/libcutefish"
-license=('GPL')
-depends=('kscreen' 'modemmanager-qt' 'networkmanager-qt' 'qt5-quickcontrols2'
-         # via dbus:
-         'accountsservice' 'bluez' 'bluez-qt')
-makedepends=('extra-cmake-modules' 'ninja' 'qt5-tools' 'git')
+license=('GPL3')
+depends=('libc6' 'libcanberra0' 'libgcc-s1' 'libkf5bluezqt6' 'libkf5coreaddons5' 'libkf5networkmanagerqt6' 'libkf5screen-bin' 'libkf5screen7' 'libpulse-mainloop-glib0'  'libpulse0' 'libqt5core5a' 'libqt5dbus5' 'libqt5gui5 | libqt5gui5-gles' 'libqt5network5' 'libqt5qml5' 'libqt5quick5 | libqt5quick5-gles' 'libqt5sensors5' 'libqt5widgets5' 'libstdc++6')
+makedepends=('qtbase5-dev' 'qtquickcontrols2-5-dev' 'modemmanager-qt-dev' 'git' 'qttools5-dev' 'qttools5-dev-tools')
 provides=("$_pkgname")
 conflicts=("$_pkgname")
 source=("git+$url.git")

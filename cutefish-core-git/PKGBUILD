@@ -6,8 +6,7 @@ arch=('x86_64')
 url="https://github.com/cutefishos/core"
 license=('GPL')
 groups=('cutefish')
-depends=('fishui-git' 'libcutefish-git' 'libpulse' 'libxcursor' 'libxtst' 'polkit-qt5' 'qt5-quickcontrols2' 
-         'xf86-input-libinput' 'xf86-input-synaptics')
+depends=('fishui-git' 'libcutefish-git' 'accountsservice' 'qml-module-qtquick-controls2' 'qml-module-qtquick2' 'qml-module-qtquick-layouts' 'qml-module-qt-labs-platform' 'qml-module-qt-labs-settings' 'qml-module-qtqml' 'qml-module-qtquick-window' 'qml-module-qtquick-shapes' 'appmenu-gtk2-module' 'appmenu-gtk3-module' 'libc6' 'libgcc-s1' 'libkf5coreaddons5' 'libkf5idletime5' 'libkf5windowsystem5' 'libpolkit-qt5-1-1' 'libqt5core5a' 'libqt5dbus5' 'libqt5gui5 | libqt5gui5-gles' 'libqt5qml5' 'libqt5quick5 | libqt5quick5-gles' 'libqt5widgets5' 'libqt5x11extras5' 'libstdc++6' 'libx11-6' 'libx11-xcb1' 'libxcb-composite0' 'libxcb-damage0' 'libxcb-dpms0' 'libxcb-image0' 'libxcb-record0' 'libxcb-shape0' 'libxcb-util1' 'libxcb1' 'libxcursor1' 'libxi6' 'libxtst6')
 makedepends=('extra-cmake-modules' 'ninja' 'qt5-tools' 'xorg-server-devel git')
 source=("git+$url.git")
 sha512sums=('SKIP')
