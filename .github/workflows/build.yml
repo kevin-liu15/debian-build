@@ -9,7 +9,7 @@ jobs:
   build:
     strategy:
       matrix:
-        pkgs: []
+        pkgs: [libcutefish-git, fishui-git, cutefish-core-git]
 
       fail-fast: false
       
